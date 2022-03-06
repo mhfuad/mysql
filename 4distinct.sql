@@ -16,6 +16,12 @@ SELECT DISTINCT
     state, city
 FROM
     customers
+
+-- MySQL DISTINCT and NULL values
+SELECT DISTINCT
+    state, city
+FROM
+    customers
 WHERE
     state IS NOT NULL
 ORDER BY 

@@ -26,3 +26,11 @@ FROM
 WHERE
     state IS NOT NULL
 LIMIT 5;
+
+
+
+-- Using MySQL LIMIT to get the nth highest or lowest value
+SELECT select_list
+FROM table_name
+ORDER BY sort_expression
+LIMIT n-1, 1;

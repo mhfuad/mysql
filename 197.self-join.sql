@@ -12,7 +12,8 @@ ORDER BY
 
 SELECT 
     IFNULL(
-        CONCAT(m.lastname, ', ', m.firstname), 'Top Manager'
+            CONCAT(m.lastname, ', ', m.firstname),
+            'Top Manager'
         ) AS 'Manager',
     CONCAT(e.lastname, ', ', e.firstname) AS 'Direct report'
 FROM
